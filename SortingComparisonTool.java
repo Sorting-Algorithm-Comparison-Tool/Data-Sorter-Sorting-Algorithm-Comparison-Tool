@@ -230,3 +230,17 @@ public class SortingComparisonTool {
                 int[] bubbleData = Arrays.copyOf(data, data.length);
                 int[] mergeData = Arrays.copyOf(data, data.length);
                 int[] quickData = Arrays.copyOf(data, data.length);
+                                // Test Bubble Sort
+                long startTime = System.nanoTime();
+                int bubbleSteps = bubbleSort(bubbleData);
+                long bubbleTime = System.nanoTime() - startTime;
+
+                // Test Merge Sort
+                startTime = System.nanoTime();
+                int mergeSteps = mergeSort(mergeData);
+                long mergeTime = System.nanoTime() - startTime;
+
+                // Test Quick Sort
+                startTime = System.nanoTime();
+                int quickSteps = quickSort(quickData);
+                long quickTime = System.nanoTime() - startTime;
