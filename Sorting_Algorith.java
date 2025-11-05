@@ -56,4 +56,18 @@ public class SortingComparisonTool {
         int j = 0; // Index for right array
         int k = 0; // Index for main array
         int steps = 0; // Count comparisons
+        // Compare elements from left and right, put smaller one in main array
+        while (i < left.length && j < right.length) {
+            steps++;
+            if (left[i] <= right[j]) {
+                arr[k] = left[i];
+                i++;
+            } else {
+                arr[k] = right[j];
+                j++;
+            }
+            k++;
+        }
+        
+
         
