@@ -224,3 +224,9 @@ public class SortingComparisonTool {
                 System.out.println("Quick Sort Execution Time: " + (endTime - startTime) / 1000000.0 + " ms");
                 System.out.println("Quick Sort Steps: " + quickSteps);
             } 
+            // Option 6: Compare all three algorithms
+            else if (choice == 6) {
+                // Make separate copies for each algorithm
+                int[] bubbleData = Arrays.copyOf(data, data.length);
+                int[] mergeData = Arrays.copyOf(data, data.length);
+                int[] quickData = Arrays.copyOf(data, data.length);
