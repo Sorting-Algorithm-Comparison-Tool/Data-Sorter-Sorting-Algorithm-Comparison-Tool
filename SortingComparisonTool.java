@@ -244,3 +244,24 @@ public class SortingComparisonTool {
                 startTime = System.nanoTime();
                 int quickSteps = quickSort(quickData);
                 long quickTime = System.nanoTime() - startTime;
+
+                // Display comparison results
+                System.out.println("\n--- Algorithm Performance Comparison ---");
+                System.out.printf("Bubble Sort Time: %.6f ms, Steps: %d\n", bubbleTime / 1000000.0, bubbleSteps);
+                System.out.printf("Merge Sort Time: %.6f ms, Steps: %d\n", mergeTime / 1000000.0, mergeSteps);
+                System.out.printf("Quick Sort Time: %.6f ms, Steps: %d\n", quickTime / 1000000.0, quickSteps);
+            } 
+
+            // Option 7: Exit program
+            else if (choice == 7) {
+                System.out.println("Exiting program.");
+                break;
+            } 
+            // Invalid choice
+            else {
+                System.out.println("Invalid choice. Please try again.");
+            }
+        }
+        sc.close(); // Close scanner
+    }
+}
