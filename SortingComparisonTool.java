@@ -202,6 +202,17 @@ public class SortingComparisonTool {
                 System.out.println("Bubble Sort Execution Time: " + (endTime - startTime) / 1000000.0 + " ms");
                 System.out.println("Bubble Sort Steps: " + bubbleSteps);
             } 
+            // Option 4: Run Merge Sort
+            else if (choice == 4) {
+                int[] mergeData = Arrays.copyOf(data, data.length);
+                long startTime = System.nanoTime();
+                int mergeSteps = mergeSort(mergeData);
+                long endTime = System.nanoTime();
+                
+                System.out.println("Merge Sort Result: " + Arrays.toString(mergeData));
+                System.out.println("Merge Sort Execution Time: " + (endTime - startTime) / 1000000.0 + " ms");
+                System.out.println("Merge Sort Steps: " + mergeSteps);
+            } 
             // Option 5: Run Quick Sort
             else if (choice == 5) {
                 int[] quickData = Arrays.copyOf(data, data.length);
