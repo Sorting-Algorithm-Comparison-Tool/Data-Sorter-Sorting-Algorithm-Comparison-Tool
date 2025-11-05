@@ -50,4 +50,10 @@ public class SortingComparisonTool {
         return steps;
     }
 
+     // Helper method to merge two sorted arrays
+    private static int merge(int[] arr, int[] left, int[] right) {
+        int i = 0; // Index for left array
+        int j = 0; // Index for right array
+        int k = 0; // Index for main array
+        int steps = 0; // Count comparisons
         
