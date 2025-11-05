@@ -43,4 +43,11 @@ public class SortingComparisonTool {
 // Step 2: Recursively sort both halves
         steps += mergeSort(left);
         steps += mergeSort(right);
+
+        // Step 3: Merge the sorted halves back together
+        steps += merge(arr, left, right);
+        
+        return steps;
+    }
+
         
