@@ -108,3 +108,29 @@ public class SortingComparisonTool {
         }
         return steps;
     }
+// Partition method: puts smaller elements on left, larger on right
+    private static int partition(int[] arr, int low, int high) {
+        int pivot = arr[high]; // Choose last element as pivot
+        int i = low - 1; // Position for smaller elements
+        int steps = 0;
+        
+        // Go through all elements except pivot
+        for (int j = low; j < high; j++) {
+            steps++;
+            // If current element is smaller than pivot
+            if (arr[j] < pivot) {
+                i++;
+                // Swap to put smaller element on left side
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+        
+        // Put pivot in its correct position
+        int temp = arr[i + 1];
+        arr[i + 1] = arr[high];
+        arr[high] = temp;
+        
+        return i + 1; // Return pivot's final position
+    }
