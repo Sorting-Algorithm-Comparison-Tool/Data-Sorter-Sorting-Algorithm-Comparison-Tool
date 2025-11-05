@@ -146,3 +146,12 @@ public class SortingComparisonTool {
         }
         return data;
     }
+   // Main program with menu
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] data = null; // Will store our numbers to sort
+
+        // Keep showing menu until user chooses to exit
+        while (true) {
+            // Display menu
+            System.out.println("\n--- Data Sorter: Sorting Algorithm Comparison Tool ---");
