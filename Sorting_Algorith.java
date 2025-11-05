@@ -24,3 +24,9 @@ public class SortingComparisonTool {
         return steps; // Return total comparisons made
     }
 
+
+     // MERGE SORT - Divide and conquer approach
+    // Like sorting two piles of cards separately, then merging them
+    public static int mergeSort(int[] arr) {
+        int steps = 0; // Count comparisons
+        
