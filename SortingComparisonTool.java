@@ -263,5 +263,5 @@ public class SortingComparisonTool {
             }
         }
         sc.close(); // Close scanner
-    }
+    }
 }
