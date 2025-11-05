@@ -155,4 +155,11 @@ public class SortingComparisonTool {
         while (true) {
             // Display menu
             System.out.println("\n--- Data Sorter: Sorting Algorithm Comparison Tool ---");
-            
+            System.out.println("1. Enter numbers manually");
+            System.out.println("2. Generate random numbers");
+            System.out.println("3. Perform Bubble Sort");
+            System.out.println("4. Perform Merge Sort");
+            System.out.println("5. Perform Quick Sort");
+            System.out.println("6. Compare all algorithms (show performance table)");
+            System.out.println("7. Exit");
+            System.out.print("Enter your choice: ");
