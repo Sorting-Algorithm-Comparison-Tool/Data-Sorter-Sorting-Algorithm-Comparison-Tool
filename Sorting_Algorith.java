@@ -40,3 +40,7 @@ public class SortingComparisonTool {
         int[] left = Arrays.copyOfRange(arr, 0, mid);      // First half
         int[] right = Arrays.copyOfRange(arr, mid, arr.length); // Second half
 
+// Step 2: Recursively sort both halves
+        steps  mergeSort(left);
+        steps += mergeSort(right);
+        
