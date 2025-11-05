@@ -202,3 +202,14 @@ public class SortingComparisonTool {
                 System.out.println("Bubble Sort Execution Time: " + (endTime - startTime) / 1000000.0 + " ms");
                 System.out.println("Bubble Sort Steps: " + bubbleSteps);
             } 
+            // Option 5: Run Quick Sort
+            else if (choice == 5) {
+                int[] quickData = Arrays.copyOf(data, data.length);
+                long startTime = System.nanoTime();
+                int quickSteps = quickSort(quickData);
+
+                
+                System.out.println("Quick Sort Result: " + Arrays.toString(quickData));
+                System.out.println("Quick Sort Execution Time: " + (endTime - startTime) / 1000000.0 + " ms");
+                System.out.println("Quick Sort Steps: " + quickSteps);
+            } 
