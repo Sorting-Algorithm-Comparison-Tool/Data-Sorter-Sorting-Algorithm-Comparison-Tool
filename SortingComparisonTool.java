@@ -207,7 +207,7 @@ public class SortingComparisonTool {
                 int[] quickData = Arrays.copyOf(data, data.length);
                 long startTime = System.nanoTime();
                 int quickSteps = quickSort(quickData);
-
+                long endTime = System.nanoTime();
                 
                 System.out.println("Quick Sort Result: " + Arrays.toString(quickData));
                 System.out.println("Quick Sort Execution Time: " + (endTime - startTime) / 1000000.0 + " ms");
