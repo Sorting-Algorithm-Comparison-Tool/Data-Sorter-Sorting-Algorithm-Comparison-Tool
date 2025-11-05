@@ -70,4 +70,11 @@ public class SortingComparisonTool {
         }
         
 
+        // Copy any remaining elements from left array
+        while (i < left.length) {
+            arr[k] = left[i];
+            i++;
+            k++;
+        }
+
         
