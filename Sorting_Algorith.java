@@ -13,3 +13,14 @@ public class SortingComparisonTool {
             for (int j = 0; j < n - i - 1; j++) {
                 steps++; // Count this comparison
                 
+// If left number is bigger than right number, swap them
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];        // Save left number
+                    arr[j] = arr[j + 1];      // Put right number on left
+                    arr[j + 1] = temp;        // Put saved number on right
+                }
+            }
+        }
+        return steps; // Return total comparisons made
+    }
+
