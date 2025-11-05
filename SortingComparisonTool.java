@@ -183,3 +183,22 @@ public class SortingComparisonTool {
                 for (int i = 0; i < n; i++) {
                     data[i] = sc.nextInt();
                 }
+                            } 
+            // Option 2: Generate random numbers
+            else if (choice == 2) {
+                System.out.print("Enter the number of random elements: ");
+                int size = sc.nextInt();
+                data = generateRandomData(size);
+                System.out.println("Generated data: " + Arrays.toString(data));
+            } 
+            // Option 3: Run Bubble Sort
+            else if (choice == 3) {
+                int[] bubbleData = Arrays.copyOf(data, data.length); // Make a copy
+                long startTime = System.nanoTime(); // Record start time
+                int bubbleSteps = bubbleSort(bubbleData);
+                long endTime = System.nanoTime(); // Record end time
+                
+                System.out.println("Bubble Sort Result: " + Arrays.toString(bubbleData));
+                System.out.println("Bubble Sort Execution Time: " + (endTime - startTime) / 1000000.0 + " ms");
+                System.out.println("Bubble Sort Steps: " + bubbleSteps);
+            } 
