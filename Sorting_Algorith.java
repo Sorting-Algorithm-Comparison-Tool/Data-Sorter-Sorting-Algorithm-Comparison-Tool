@@ -35,3 +35,8 @@ public class SortingComparisonTool {
         if (arr.length <= 1) {
             return steps;
         }
+// Step 1: Split array into two halves
+        int mid = arr.length / 2;
+        int[] left = Arrays.copyOfRange(arr, 0, mid);      // First half
+        int[] right = Arrays.copyOfRange(arr, mid, arr.length); // Second half
+
