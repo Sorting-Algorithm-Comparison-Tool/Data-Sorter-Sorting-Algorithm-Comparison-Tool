@@ -163,3 +163,23 @@ public class SortingComparisonTool {
             System.out.println("6. Compare all algorithms (show performance table)");
             System.out.println("7. Exit");
             System.out.print("Enter your choice: ");
+
+            // Input validation for menu choice
+            int choice;
+            try {
+                choice = sc.nextInt();
+            } catch (InputMismatchException e) {
+                System.out.println("Invalid input! Please enter a number between 1-7.");
+                sc.nextLine(); // Clear invalid input
+                continue;
+            }
+
+           // Option 1: User enters numbers
+            if (choice == 1) {
+                System.out.print("Enter the number of elements: ");
+                int n = sc.nextInt();
+                data = new int[n];
+                System.out.println("Enter the numbers:");
+                for (int i = 0; i < n; i++) {
+                    data[i] = sc.nextInt();
+                }
