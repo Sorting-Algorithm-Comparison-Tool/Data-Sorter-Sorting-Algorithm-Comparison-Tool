@@ -95,3 +95,16 @@ public class SortingComparisonTool {
     private static int quickSortHelper(int[] arr, int low, int high) {
         int steps = 0;
         
+// Only sort if there are at least 2 elements
+        if (low < high) {
+            // Partition and get pivot position
+            int pivotIndex = partition(arr, low, high);
+            
+            // Recursively sort left side of pivot
+            steps += quickSortHelper(arr, low, pivotIndex - 1);
+            
+            // Recursively sort right side of pivot
+            steps += quickSortHelper(arr, pivotIndex + 1, high);
+        }
+        return steps;
+    }
