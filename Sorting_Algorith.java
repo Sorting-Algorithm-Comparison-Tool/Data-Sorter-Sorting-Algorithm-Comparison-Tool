@@ -30,3 +30,8 @@ public class SortingComparisonTool {
     public static int mergeSort(int[] arr) {
         int steps = 0; // Count comparisons
         
+
+        // Base case: array with 0 or 1 element is already sorted
+        if (arr.length <= 1) {
+            return steps;
+        }
