@@ -87,5 +87,11 @@ public class SortingComparisonTool {
         return steps;
     }
 
+// QUICK SORT  
+    public static int quickSort(int[] arr) {
+        return quickSortHelper(arr, 0, arr.length - 1);
+    }
 
+    private static int quickSortHelper(int[] arr, int low, int high) {
+        int steps = 0;
         
