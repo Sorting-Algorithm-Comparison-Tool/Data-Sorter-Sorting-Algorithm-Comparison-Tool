@@ -134,3 +134,15 @@ public class SortingComparisonTool {
         
         return i + 1; // Return pivot's final position
     }
+
+   // DATA GENERATION, PERFORMANCE COMPARISON, AND DISPLAY MODULES
+
+    // Generate random numbers for testing
+    public static int[] generateRandomData(int size) {
+        Random rand = new Random();
+        int[] data = new int[size];
+        for (int i = 0; i < size; i++) {
+            data[i] = rand.nextInt(100); // Random number between 0-99
+        }
+        return data;
+    }
